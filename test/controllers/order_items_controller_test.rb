@@ -10,5 +10,4 @@ class OrderItemsControllerTest < ActionController::TestCase
     get :destroy
     assert_response :success
   end
-
 end
