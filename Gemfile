@@ -27,6 +27,7 @@ gem 'html2haml'
 gem 'simple_form', '~> 4.1'
 gem 'simplecov'
 gem 'sprockets-rails', require: 'sprockets/railtie'
+gem 'devise'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 group :development, :test do
