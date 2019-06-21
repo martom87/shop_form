@@ -3881,3 +3881,451 @@ Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.0ms)
 
 
   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:32:16 +0200
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (241.7ms)
+  Rendered layouts/_cart_text.html.erb (34.2ms)
+  Rendered layouts/_logger.html.erb (1.0ms)
+Completed 200 OK in 439ms (Views: 405.9ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/carts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/application.self-71ed15c50144bc50278b1c1129a3b54d901f0c641e3087b4eed556689ded8be6.js?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/order_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/order_items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for 127.0.0.1 at 2019-06-21 21:32:17 +0200
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:32:19 +0200
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:32:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_cart_text.html.erb (1.1ms)
+  Rendered layouts/_logger.html.erb (1.9ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:32:23 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3ryJWeSRWaIPmgxU00VnVEwawIxpx+qeXch3INlFlhjuEOcXL257ZHjVUhHF4Ob8e5ZNU9nTPdJo1z8S/18lkA==", "user"=>{"email"=>"mdptvj23@interia.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mdptvj23@interia.pl"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 9ms (ActiveRecord: 1.8ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3ryJWeSRWaIPmgxU00VnVEwawIxpx+qeXch3INlFlhjuEOcXL257ZHjVUhHF4Ob8e5ZNU9nTPdJo1z8S/18lkA==", "user"=>{"email"=>"mdptvj23@interia.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.7ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_cart_text.html.erb (1.8ms)
+  Rendered layouts/_logger.html.erb (2.2ms)
+Completed 200 OK in 199ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-06-21 21:32:27 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_cart_text.html.erb (1.7ms)
+  Rendered layouts/_logger.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-06-21 21:32:35 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DgdzIoBRRaXfYxswLmwuv/QAJ+uPiVARIS+bK6PxQ8c+qx1sS65nY6gsRXU4ya8Xw4yqND+dh10UMNMZhevwTw==", "user"=>{"email"=>"mdptvj23@interia.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mdptvj23@interia.pl"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "mdptvj23@interia.pl"], ["encrypted_password", "$2a$11$AUINk96MIAZ9JSLE9W6JIu8355A0ipy2VPaScEpHih8n38TTE5tla"], ["created_at", "2019-06-21 19:32:35.661633"], ["updated_at", "2019-06-21 19:32:35.661633"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 159ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:32:35 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."active" = $1[0m  [["active", true]]
+  Rendered products/_product_row.html.erb (3.8ms)
+  Rendered products/_product_row.html.erb (4.0ms)
+  Rendered products/_product_row.html.erb (1.3ms)
+  Rendered products/index.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_cart_text.html.erb (0.9ms)
+  Rendered layouts/_logger.html.erb (0.7ms)
+Completed 200 OK in 84ms (Views: 52.4ms | ActiveRecord: 6.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-06-21 21:33:52 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DJ3JLC8mZxpYOgq9lxg6lYMh2IcPD3Q22XdPtBUJJek8Madi5NlF3C91VPiBvbs9tK1VWL8bo3rsaAeGMxOWYQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:33:52 +0200
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:33:52 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (4.8ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_cart_text.html.erb (1.5ms)
+  Rendered layouts/_logger.html.erb (1.1ms)
+Completed 200 OK in 132ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:33:57 +0200
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:33:57 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_cart_text.html.erb (1.1ms)
+  Rendered layouts/_logger.html.erb (1.0ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:34:07 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Md7wGrVzBnbyjRr2tyh+kF6wV8bfscDu8fcEs/ddo5a36SkjPu4gElHKuWTY+kn+1cO9xET1Hu1ahP7ADFuTfw==", "user"=>{"email"=>"mdptvj23@interia.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mdptvj23@interia.pl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 153ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:34:07 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."active" = $1[0m  [["active", true]]
+  Rendered products/_product_row.html.erb (1.5ms)
+  Rendered products/_product_row.html.erb (0.8ms)
+  Rendered products/_product_row.html.erb (0.9ms)
+  Rendered products/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_cart_text.html.erb (0.9ms)
+  Rendered layouts/_logger.html.erb (0.6ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/order_items" for 127.0.0.1 at 2019-06-21 21:34:27 +0200
+Processing by OrderItemsController#create as JS
+  Parameters: {"utf8"=>"✓", "order_item"=>{"quantity"=>"1", "product_id"=>"1"}, "commit"=>"Add to Cart"}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."active" = $1 AND "products"."id" = $2 LIMIT $3[0m  [["active", true], ["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("subtotal", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["subtotal", "0.49"], ["created_at", "2019-06-21 19:34:27.681497"], ["updated_at", "2019-06-21 19:34:27.681497"]]
+  [1m[36mOrderItem Create (0.4ms)[0m  [1m[32mINSERT INTO "order_items" ("product_id", "order_id", "unit_price", "quantity", "total_price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["product_id", 1], ["order_id", 2], ["unit_price", "0.49"], ["quantity", 1], ["total_price", "0.49"], ["created_at", "2019-06-21 19:34:27.683049"], ["updated_at", "2019-06-21 19:34:27.683049"]]
+  [1m[35m (13.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering order_items/create.js.erb
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 2]]
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mOrderItem Load (0.5ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 2]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."active" = $1 AND "products"."id" = $2 LIMIT $3[0m  [["active", true], ["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_cart_text.html.erb (15.4ms)
+  Rendered order_items/create.js.erb (24.6ms)
+Completed 200 OK in 99ms (Views: 51.4ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2019-06-21 21:34:29 +0200
+Processing by CartsController#show as HTML
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering carts/show.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 2]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 2]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."active" = $1 AND "products"."id" = $2 LIMIT $3[0m  [["active", true], ["id", 1], ["LIMIT", 1]]
+  Rendered carts/_cart_row.html.erb (5.7ms)
+  Rendered carts/_shopping_cart.html.erb (12.1ms)
+  Rendered carts/show.html.erb within layouts/application (14.1ms)
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 2]]
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE OrderItem Load (0.0ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 2]]
+  [1m[36mCACHE Product Load (0.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."active" = $1 AND "products"."id" = $2 LIMIT $3[0m  [["active", true], ["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_cart_text.html.erb (4.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_logger.html.erb (2.1ms)
+Completed 200 OK in 83ms (Views: 75.0ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-06-21 21:34:33 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RaaNcW+dPvWLZWTWJnX01kglupxY/u4wGoi7rwi1R9aedUwbYtr+vsweMigOhNKR2KGuGP5JWqg3nRlJvF31Hg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:34:33 +0200
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:34:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_cart_text.html.erb (1.0ms)
+  Rendered layouts/_logger.html.erb (0.7ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:34:37 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jd+In1GxQ+Wv8qJFSWRBqZqeDrNJCOofdH2TmmwFO6NwRX84iCo8Cgzk4X0/uOqKQd1/qOYKDS7SXW518mFFGA==", "user"=>{"email"=>"mdptvj23@interia.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mdptvj23@interia.pl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 165ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:34:37 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."active" = $1[0m  [["active", true]]
+  Rendered products/_product_row.html.erb (2.1ms)
+  Rendered products/_product_row.html.erb (1.0ms)
+  Rendered products/_product_row.html.erb (0.7ms)
+  Rendered products/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_cart_text.html.erb (0.9ms)
+  Rendered layouts/_logger.html.erb (0.9ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (208.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "shop_form_app"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "shop_form_app"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "shop_form_app"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "shop_form_app"[0m
+  [1m[35m (1033.7ms)[0m  [1m[35mCREATE DATABASE "shop_form_app" ENCODING = 'unicode'[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE "shop_form_app" ENCODING = 'unicode'[0m
+  [1m[35m (47.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3028640620710729360)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20140927185643)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "price" decimal(12,3), "active" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20140927185643"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateOrders (20140927190042)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "subtotal" decimal(12,3), "tax" decimal(12,3), "shipping" decimal(12,3), "total" decimal(12,3), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20140927190042"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateOrderItems (20140927192104)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "order_items" ("id" bigserial primary key, "product_id" bigint, "order_id" bigint, "unit_price" decimal(12,3), "quantity" integer, "total_price" decimal(12,3), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE  INDEX  "index_order_items_on_product_id" ON "order_items"  ("product_id")[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_order_items_on_order_id" ON "order_items"  ("order_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20140927192104"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20190621184212)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190621184212"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-21 19:37:06.078975"], ["updated_at", "2019-06-21 19:37:06.078975"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(3028640620710729360)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."active" = $1[0m  [["active", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("id", "name", "price", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["name", "Banana"], ["price", "0.49"], ["active", true], ["created_at", "2019-06-21 19:37:25.251394"], ["updated_at", "2019-06-21 19:37:25.251394"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("id", "name", "price", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 2], ["name", "Apple"], ["price", "0.29"], ["active", true], ["created_at", "2019-06-21 19:37:25.254794"], ["updated_at", "2019-06-21 19:37:25.254794"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("id", "name", "price", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 3], ["name", "Carton of Strawberries"], ["price", "1.99"], ["active", true], ["created_at", "2019-06-21 19:37:25.257608"], ["updated_at", "2019-06-21 19:37:25.257608"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:39:00 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 33ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:39:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_cart_text.html.erb (30.5ms)
+  Rendered layouts/_logger.html.erb (0.7ms)
+Completed 200 OK in 185ms (Views: 172.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-06-21 21:39:06 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_cart_text.html.erb (1.2ms)
+  Rendered layouts/_logger.html.erb (1.3ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-06-21 21:39:18 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jKGqlMQkr7RmmVGjsTM01Pb4mtbr7x+LEJdaZk0Ca6ZUGIrbclbZMDMpu/RAP6FaMw8COMP48grk4YzbQBrp7w==", "user"=>{"email"=>"mdptvj23@interia.pl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mdptvj23@interia.pl"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "mdptvj23@interia.pl"], ["encrypted_password", "$2a$11$0D.qDw7e55buyoolC3xokeX7DSrdz782Shqp2INERmknS.mBSeiDW"], ["created_at", "2019-06-21 19:39:18.795047"], ["updated_at", "2019-06-21 19:39:18.795047"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 166ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:39:18 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."active" = $1[0m  [["active", true]]
+  Rendered products/_product_row.html.erb (2.9ms)
+  Rendered products/_product_row.html.erb (0.8ms)
+  Rendered products/_product_row.html.erb (0.7ms)
+  Rendered products/index.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_cart_text.html.erb (0.8ms)
+  Rendered layouts/_logger.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 31.2ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/order_items" for 127.0.0.1 at 2019-06-21 21:39:25 +0200
+Processing by OrderItemsController#create as JS
+  Parameters: {"utf8"=>"✓", "order_item"=>{"quantity"=>"1", "product_id"=>"1"}, "commit"=>"Add to Cart"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."active" = $1 AND "products"."id" = $2 LIMIT $3[0m  [["active", true], ["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("subtotal", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["subtotal", "0.49"], ["created_at", "2019-06-21 19:39:25.294479"], ["updated_at", "2019-06-21 19:39:25.294479"]]
+  [1m[36mOrderItem Create (0.5ms)[0m  [1m[32mINSERT INTO "order_items" ("product_id", "order_id", "unit_price", "quantity", "total_price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["product_id", 1], ["order_id", 1], ["unit_price", "0.49"], ["quantity", 1], ["total_price", "0.49"], ["created_at", "2019-06-21 19:39:25.296079"], ["updated_at", "2019-06-21 19:39:25.296079"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering order_items/create.js.erb
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 1]]
+  [1m[36mCACHE Order Load (0.0ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrderItem Load (0.3ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."active" = $1 AND "products"."id" = $2 LIMIT $3[0m  [["active", true], ["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_cart_text.html.erb (13.1ms)
+  Rendered order_items/create.js.erb (16.8ms)
+Completed 200 OK in 42ms (Views: 23.4ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-06-21 21:39:27 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IXcDzbsQWy7F3zARz/a0y8bL3iQkvljQYCqdbhMBrM75ziOCDWItqpBv2kY++iFFAzxGygyptVGUXEvTHhkuhw=="}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:39:27 +0200
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:39:27 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_cart_text.html.erb (2.0ms)
+  Rendered layouts/_logger.html.erb (1.8ms)
+Completed 200 OK in 61ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:39:30 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cf1QqLNZbSq2lQHxIOObzJ45kWS0ckDOql73d55ZfUN0Q436En9ertwtDnXjST1kn7VW4QAd7Y9YedI98EA/nw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cf1QqLNZbSq2lQHxIOObzJ45kWS0ckDOql73d55ZfUN0Q436En9ertwtDnXjST1kn7VW4QAd7Y9YedI98EA/nw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /home/tomal/.rvm/gems/ruby-2.6.2/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_cart_text.html.erb (1.5ms)
+  Rendered layouts/_logger.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-06-21 21:39:33 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqapAApjtdn6RaHAxAGQU9pUqer6DPAUbEbOqnBTofDXGHRSq0WGXZD9rkQHqzb729hub05jXVWeYevgHkrjLA==", "user"=>{"email"=>"mdptvj23@interia.pl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "mdptvj23@interia.pl"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 164ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-21 21:39:33 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."active" = $1[0m  [["active", true]]
+  Rendered products/_product_row.html.erb (2.7ms)
+  Rendered products/_product_row.html.erb (1.5ms)
+  Rendered products/_product_row.html.erb (1.7ms)
+  Rendered products/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_cart_text.html.erb (1.6ms)
+  Rendered layouts/_logger.html.erb (0.9ms)
+Completed 200 OK in 75ms (Views: 63.7ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mOrder Load (1.5ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 1]]
+  [1m[36mOrder Load (2.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrderItem Load (1.2ms)[0m  [1m[34mSELECT  "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1 LIMIT $2[0m  [["order_id", 1], ["LIMIT", 11]]
+  [1m[36mOrder Load (2.4ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrderItem Load (1.0ms)[0m  [1m[34mSELECT  "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1 LIMIT $2[0m  [["order_id", 1], ["LIMIT", 11]]
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrderItem Load (1.1ms)[0m  [1m[34mSELECT  "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1 AND "order_items"."id" = $2 LIMIT $3[0m  [["order_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (3.3ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrderItem Load (1.3ms)[0m  [1m[34mSELECT  "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1 AND "order_items"."id" = $2 LIMIT $3[0m  [["order_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Load (1.4ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrderItem Load (1.4ms)[0m  [1m[34mSELECT  "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1 AND "order_items"."id" = $2 LIMIT $3[0m  [["order_id", 1], ["id", 1], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."active" = $1 AND "products"."id" = $2 LIMIT $3[0m  [["active", true], ["id", 1], ["LIMIT", 1]]
