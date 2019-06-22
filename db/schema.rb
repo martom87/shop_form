@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_06_21_202924) do
   create_table "order_items", force: :cascade do |t|
     t.bigint "product_id"
     t.bigint "order_id"
+    t.bigint "user_id"
     t.decimal "unit_price", precision: 12, scale: 3
     t.integer "quantity"
     t.decimal "total_price", precision: 12, scale: 3
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_06_21_202924) do
     t.datetime "updated_at", null: false
     t.index ["order_id"], name: "index_order_items_on_order_id"
     t.index ["product_id"], name: "index_order_items_on_product_id"
+    t.index ["user_id"], name: "index_order_items_on_user_id"
   end
 
   create_table "orders", force: :cascade do |t|
