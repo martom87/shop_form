@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 class OrderItem < ApplicationRecord
   belongs_to :product
   belongs_to :order
   belongs_to :user
 
-  validates :quantity, presence: true, numericality: {only_integer: true, greater_than: 0}
+  validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
   validate :product_present
   validate :order_present
 
@@ -24,15 +26,11 @@ class OrderItem < ApplicationRecord
   private
 
   def product_present
-    if product.nil?
-      errors.add(:product, "is not valid or is not active.")
-    end
+    errors.add(:product, 'is not valid or is not active.') if product.nil?
   end
 
   def order_present
-    if order.nil?
-      errors.add(:order, "is not a valid order.")
-    end
+    errors.add(:order, 'is not a valid order.') if order.nil?
   end
 
   def finalize

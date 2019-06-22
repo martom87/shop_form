@@ -1,27 +1,29 @@
+# frozen_string_literal: true
+
 class OrderItemsController < ApplicationController
+  before_action :set_current_order, only: %i[create update destroy]
+  before_action :set_order_items, only: %i[update destroy]
+
   def create
-    @order = current_order
-    @order_item = @order.order_items.new(order_item_params)
+    order_item = @order.order_items.new(order_item_params)
     if @order.save
       @user_order = current_user.user_orders.new(order_id: @order.id)
-      current_user.order_items << @order_item
+      current_user.order_items << order_item
       @user_order.save
     end
     session[:order_id] = @order.id
   end
 
   def update
-    @order = current_order
-    @order_item = @order.order_items.find(params[:id])
-    @order_item.update_attributes(order_item_params)
-    @order_items = @order.order_items
+    #  update_service = OrderItems::UpdateService.new(params[:id])
+    #  update_service.call(@order, @order_item)
+    order_item = current_order.order_items.find(params[:id])
+    order_item.update(order_item_params)
   end
 
   def destroy
-    @order = current_order
-    @order_item = @order.order_items.find(params[:id])
-    @order_item.destroy
-    @order_items = @order.order_items
+    order_item = @order.order_items.find(params[:id])
+    order_item.destroy
   end
 
   private
@@ -29,4 +31,13 @@ class OrderItemsController < ApplicationController
   def order_item_params
     params.require(:order_item).permit(:quantity, :product_id)
   end
+
+  def set_current_order
+    @order = current_order
+  end
+
+  def set_order_items
+    @order_items = @order.order_items
+  end
+
 end
