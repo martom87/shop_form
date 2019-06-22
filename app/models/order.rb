@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Order < ApplicationRecord
   has_many :order_items
   has_many :user_orders, dependent: :destroy
@@ -6,7 +8,7 @@ class Order < ApplicationRecord
   before_save :update_subtotal
 
   def subtotal
-    order_items.collect {|oi| oi.valid? ? (oi.quantity * oi.unit_price) : 0}.sum
+    order_items.collect { |oi| oi.valid? ? (oi.quantity * oi.unit_price) : 0 }.sum
   end
 
   private

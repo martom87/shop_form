@@ -1,34 +1,36 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 ruby '2.6.2'
 
 gem 'rails', '5.2.3'
 
-gem 'pg'
-gem 'sass-rails'
-gem 'uglifier'
-gem 'rubocop', '~> 0.64.0', require: false
-gem 'puma', '~> 3.11'
-gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder', '~> 2.5'
-gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'better_errors'
-gem 'pry'
-gem 'pry-rails'
 gem 'binding_of_caller'
 gem 'bootstrap', '~> 4.3.1'
+gem 'coffee-rails'
+gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'font-awesome-rails'
 gem 'haml-rails'
 gem 'html2haml'
+gem 'jbuilder', '~> 2.5'
+gem 'jquery-rails'
+gem 'pg'
+gem 'pry'
+gem 'pry-rails'
+gem 'puma', '~> 3.11'
+gem 'rubocop', '~> 0.64.0', require: false
+gem 'sass-rails'
+gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form', '~> 4.1'
 gem 'simplecov'
 gem 'sprockets-rails', require: 'sprockets/railtie'
-gem 'devise'
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'turbolinks'
+gem 'tzinfo-data', platforms: %i[mingw mswin]
+gem 'uglifier'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
