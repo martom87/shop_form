@@ -6,7 +6,6 @@ class OrderItemsController < ApplicationController
   def create
     order = current_order
     order_item_params = params.require(:order_item).permit(:quantity, :product_id)
-
     order_item = order.order_items.new(order_item_params)
     if order.save
       user_order = current_user.user_orders.new(order_id: order.id)
@@ -21,8 +20,7 @@ class OrderItemsController < ApplicationController
   end
 
   def destroy
-    order_item = current_order.order_items.find(params[:id])
-    order_item.destroy
+    OrderItems::DestroyService.new(params, current_order).call
   end
 
   private
