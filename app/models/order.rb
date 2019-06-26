@@ -13,10 +13,6 @@ class Order < ApplicationRecord
 
   private
 
-  def set_order_status
-    self.order_status_id = 1
-  end
-
   def update_subtotal
     self[:subtotal] = subtotal
   end
