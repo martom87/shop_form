@@ -31,6 +31,8 @@ gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'turbolinks'
 gem 'tzinfo-data', platforms: %i[mingw mswin]
 gem 'uglifier'
+gem 'draper'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

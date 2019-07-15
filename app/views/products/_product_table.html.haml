@@ -1,0 +1,14 @@
+%table.table.table-striped
+  %tbody
+    - products.each_with_index do |product, i|
+      %tr
+        %td= i + 1
+        %td
+          %img.img-rounded{ src: product.cover }
+        %td
+          %h4
+            =product.name
+          %p
+            %strong
+              =product.price
+          %p
