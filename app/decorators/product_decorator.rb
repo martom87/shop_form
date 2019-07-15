@@ -3,7 +3,7 @@ class ProductDecorator < ApplicationDecorator
 
   def cover
     "http://lorempixel.com/100/150/" +
-        %w[abstract nightlife transport].sample +
+        %w[food].sample +
         "?a=" + SecureRandom.uuid
   end
 

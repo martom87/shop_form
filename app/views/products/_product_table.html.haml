@@ -4,7 +4,9 @@
       %tr
         %td= i + 1
         %td
+          %p
           %img.img-rounded{ src: product.cover }
+          %p
         %td
           %h4
             =product.name
@@ -12,3 +14,7 @@
             %strong
               =product.price
           %p
+            %p
+              = render 'products/form', order_item: @order_item, product:product
+            %p
+
