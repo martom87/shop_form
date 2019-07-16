@@ -12,7 +12,11 @@ class ProductDecorator < ApplicationDecorator
   end
 
   def picture_size
-    "100x150"
+    setting.picture_dimensions
+  end
+
+  def setting
+    Setting.find(1)
   end
 
 end

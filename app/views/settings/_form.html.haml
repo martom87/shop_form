@@ -1,0 +1,7 @@
+.row
+  .col-xs-12
+    =  simple_form_for [@setting] do |f|
+      .form-group
+        .control-label.col-sm-2
+          = f.input :picture_dimensions, error: true, required: false
+          = f.button :submit, class: "btn btn-primary"
