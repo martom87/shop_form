@@ -1,14 +1,7 @@
 class SettingsController < ApplicationController
 
-  before_action :set_setting, only: [:edit, :update, :show, :destroy]
+  before_action :set_setting, only: [:edit, :update, :show]
 
-  def new
-    @setting = Setting.new
-  end
-
-  def index
-    @settings = Setting.all
-  end
 
   def show
 
@@ -20,8 +13,9 @@ class SettingsController < ApplicationController
 
   def update
     if @setting.update(setting_params)
-      flash[:success] = "Setting was changed"
-      render 'edit'
+      flash[:notice] = "Setting was changed"
+      #render 'edit'
+      redirect_to root_path
     else
       render 'edit'
     end
