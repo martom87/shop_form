@@ -58,10 +58,9 @@ GEM
     bindex (0.7.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
-    bootstrap (4.3.1)
-      autoprefixer-rails (>= 9.1.0)
-      popper_js (>= 1.14.3, < 2)
-      sassc-rails (>= 2.0.0)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.3)
     byebug (11.0.1)
     coderay (1.1.2)
@@ -153,7 +152,6 @@ GEM
     parser (2.6.3.0)
       ast (~> 2.4.0)
     pg (1.1.4)
-    popper_js (1.14.5)
     powerpack (0.1.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -300,9 +298,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   better_errors
   binding_of_caller
-  bootstrap (~> 4.3.1)
+  bootstrap-sass (~> 3.4.1)
   byebug
   coffee-rails
   devise
@@ -325,6 +324,7 @@ DEPENDENCIES
   rspec-rails
   rubocop (~> 0.64.0)
   sass-rails
+  sassc-rails (>= 2.1.0)
   sdoc (~> 0.4.0)
   shoulda-matchers
   simple_form (~> 4.1)
