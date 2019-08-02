@@ -14,13 +14,15 @@
     /* Float four columns side by side */
     .column {
       float: left;
-      width: 25%;
-      padding: 0 10px;
+      width: 20%;
+      padding-left: 200px;
     }
 
     /* Remove extra left and right margins, due to padding */
     .row {
+      width: 60%;
       margin: 0 -5px;
+      margin-left: 20px;
     }
 
     /* Clear floats after the columns */
@@ -37,16 +39,23 @@
         width: 100%;
         display: block;
         margin-bottom: 20px;
+
       }
     }
 
     /* Style the counter cards */
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 16px;
+      border: #222222;
+      padding: 20px;
       text-align: center;
-      background-color: #f1f1f1;
-      margin-bottom: 40px;
+      background-color: #fff;
+      margin-bottom: 10px;
+      margin-left: 60px;
+      height: 400px;
+      width: 200px;
+
+
     }
   </style>
 </head>
@@ -55,14 +64,13 @@
 <div class="row">
   <% products.each do |product| %>
     <div class="column">
-      <div class="card" style="width: 20rem;">
+      <div class="card">
         <p class="card-img-top"><%= image_tag(product.cover2, size: product.picture_size) %></p>
         <div class="card-body">
-          <h5 class="card-title"><%= product.name %></h5>
-          <h5 class="card-title"><%= product.price %></h5>
+          <h4 class="card-title"><%= product.name %></h4>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <%= render 'form', order_item: @order_item, product:product %>
         </div>
       </div>
     </div>
