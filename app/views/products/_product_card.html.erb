@@ -10,7 +10,7 @@
   /* Float four columns side by side */
   .column {
     float: left;
-    width: 20%;
+    width: 23%;
     padding-left: 200px;
   }
 
@@ -53,25 +53,29 @@
     width: 200px;
   }
 
-  .img-circular{
+  .img-circular {
     border-radius: 20px;
   }
 
+    .sep{
 
+    }
 
 </style>
 
 <div class="row">
   <% products.each do |product| %>
     <div class="column">
-      <div class="card">
-        <div class="card-img-top"><%= image_tag(product.cover2, size: product.picture_size ,:class=> "img-circular" ) %></div>
-        <div class="card-body">
-<!--          Important This line show how to parametrize styles with enbeded ruby-->
-          <h4 class="card-title" style="color:<%="blue"%>;font-size: <%=160%>%"><%= product.name %></h4>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <%= render 'form', order_item: @order_item, product: product %>
+      <div class="sep">
+        <div class="card">
+          <div class="card-img-top"><%= image_tag(product.cover2, size: product.picture_size, :class => "img-circular") %></div>
+          <div class="card-body">
+            <!--          Important This line show how to parametrize styles with enbeded ruby-->
+            <h4 class="card-title" style="color:<%="blue"%>;font-size: <%=160%>%"><%= product.name %></h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <%= render 'form', order_item: @order_item, product: product %>
+          </div>
         </div>
       </div>
     </div>
