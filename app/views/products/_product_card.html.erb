@@ -42,6 +42,7 @@
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     border: #222222;
     padding: 20px;
     text-align: center;
@@ -52,6 +53,11 @@
     width: 200px;
   }
 
+  .img-circular{
+    border-radius: 20px;
+  }
+
+
 
 </style>
 
@@ -59,7 +65,7 @@
   <% products.each do |product| %>
     <div class="column">
       <div class="card">
-        <p class="card-img-top"><%= image_tag(product.cover2, size: product.picture_size) %></p>
+        <div class="card-img-top"><%= image_tag(product.cover2, size: product.picture_size ,:class=> "img-circular" ) %></div>
         <div class="card-body">
 <!--          Important This line show how to parametrize styles with enbeded ruby-->
           <h4 class="card-title" style="color:<%="blue"%>;font-size: <%=160%>%"><%= product.name %></h4>
