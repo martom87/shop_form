@@ -13,8 +13,6 @@
     padding: 60px;
     margin-right: -80px;
 
-
-
   }
 
   .page_container {
@@ -24,36 +22,44 @@
     margin-left: 30px;
     margin-left: -120px;
 
-
   }
 
-    .cart_row{
-      margin-right: -100px;
-    }
+  .cart_row {
+    margin-right: -100px;
+  }
 
-  .product_row{
-    margin-right: -350px;  }
+  .product_row {
+    margin-right: -350px;
+  }
+
+  .title_products {
+    margin-left: 650px;
+  }
+
+    .title_card_items{
+      margin-left: 100px;
+    }
 
 </style>
 
 
-<div class = "page_container">
+<div class="page_container">
 
 
-<div class="column2">
-  <div class="product_row">
-    <h2 class="text-center">Products</h2>
-    <%= render 'product_card', products: @products, order_item: @order_item %>
+  <div class="column2">
+    <div class="product_row">
+      <h2 class="title_products">Products</h2>
+      <%= render 'product_card', products: @products, order_item: @order_item %>
+    </div>
   </div>
-</div>
 
 
-<div class="column3">
-  <div class="cart_row">
-    <h2 class="text-center">Cart</h2>
-    <%= render "carts/shopping_cart" %>
+  <div class="column3">
+    <div class="cart_row">
+      <h2 class="title_card_items">Cart</h2>
+      <%= render "carts/shopping_cart" %>
+    </div>
   </div>
-</div>
 
 </div>
 
