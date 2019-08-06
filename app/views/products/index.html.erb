@@ -51,6 +51,7 @@
       <h2 class="title_products">Products</h2>
       <%= render 'product_card', products: @products, order_item: @order_item %>
     </div>
+    <%= will_paginate @products%>
   </div>
 
 
@@ -62,6 +63,5 @@
   </div>
 
 </div>
-
 
 
