@@ -1,0 +1,87 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 23%;
+    padding-left: 200px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    width: 60%;
+    margin: 0 -5px;
+    margin-left: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+
+    }
+  }
+
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    border: #222222;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    height: 400px;
+    width: 200px;
+  }
+
+  .img-circular {
+    border-radius: 20px;
+  }
+
+    .sep{
+
+    }
+
+</style>
+
+<div class="row">
+  <% products.each do |product| %>
+    <div class="column">
+      <div class="sep">
+        <div class="card">
+          <div class="card-img-top"><%= image_tag(product.cover2, size: product.picture_size, :class => "img-circular") %></div>
+          <div class="card-body">
+            <!--          Important This line show how to parametrize styles with enbeded ruby-->
+            <h4 class="card-title" style="color:<%="blue"%>;font-size: <%=160%>%"><%= product.name %></h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <%= render 'form', order_item: @order_item, product: product %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+

@@ -8,7 +8,9 @@ gem 'rails', '5.2.3'
 
 gem 'better_errors'
 gem 'binding_of_caller'
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'autoprefixer-rails'
 gem 'coffee-rails'
 gem 'devise'
 gem 'devise-bootstrap-views'
@@ -31,6 +33,8 @@ gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'turbolinks'
 gem 'tzinfo-data', platforms: %i[mingw mswin]
 gem 'uglifier'
+gem 'draper'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
