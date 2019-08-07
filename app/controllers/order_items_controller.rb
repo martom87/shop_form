@@ -37,10 +37,6 @@ class OrderItemsController < ApplicationController
     @order_item = @order.order_items.find(params[:id])
   end
 
-  def set_order_item
-    @order_item = @order.order_items.find(params[:id])
-  end
-
   def set_order_items
     @order_items = @order.order_items
   end
