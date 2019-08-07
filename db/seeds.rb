@@ -22,3 +22,5 @@ Product.create! id: 18, name: 'Meat', price: 1.99, active: true
 Product.create! id: 19, name: 'Potato', price: 1.99, active: true
 Product.create! id: 20, name: 'Carrot', price: 1.99, active: true
 
+Setting.create! id: 1,  picture_dimensions: '120x140'
+
