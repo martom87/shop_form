@@ -36,9 +36,9 @@
     margin-left: 650px;
   }
 
-    .title_card_items{
-      margin-left: 100px;
-    }
+  .title_card_items {
+    margin-left: 100px;
+  }
 
 </style>
 
@@ -51,17 +51,17 @@
       <h2 class="title_products">Products</h2>
       <%= render 'product_card', products: @products, order_item: @order_item %>
     </div>
+    <%= paginate @products %>
   </div>
 
 
   <div class="column3">
     <div class="cart_row">
       <h2 class="title_card_items">Cart</h2>
-      <%= render "carts/shopping_cart" %>
+      <%= render 'carts/shopping_cart' %>
     </div>
   </div>
 
 </div>
-
 
 

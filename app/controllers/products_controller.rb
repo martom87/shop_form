@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
 
 
   def index
-    @products = Product.all.decorate
+    @products = Product.page(params[:page]).per(8).decorate
     @order_item = current_order.order_items.new
   end
 end
