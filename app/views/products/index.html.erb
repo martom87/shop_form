@@ -7,13 +7,12 @@
 
   }
 
-  .column3 {
-    float: left;
+  #column3 {
+    height: 1000px;
     width: 20%;
     padding: 60px;
     margin-right: -80px;
-
-  }
+    overflow-x: hidden;    }
 
   .page_container {
     width: 100%;
@@ -65,7 +64,7 @@
   </div>
 
 
-  <div class="column3">
+  <div id="column3">
     <div class="cart_row">
       <h2 class="title_card_items">Cart</h2>
       <%= render 'carts/shopping_cart' %>
@@ -74,4 +73,9 @@
 
 </div>
 
+<script>
+    $(document).ready(function() {
+     $("#column3").niceScroll({nativeparentscrolling: false,touchbehavior:false,cursorcolor:"#CCC",cursoropacitymax:0.8,cursorwidth:4,autohidemode:false});
+    });
+</script>
 
