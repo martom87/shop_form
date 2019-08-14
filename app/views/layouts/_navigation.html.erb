@@ -17,9 +17,9 @@
       </ul>
       <form class="navbar-form navbar-left">
         <div class="form-group">
-          <%= form_tag(root_path method: :get) do %>
-            <%= text_field_tag :product_name, params[:product_name],placeholder: "type product name"%>
-            <%= submit_tag 'Search', name: nil %>
+          <%= search_form_for @search do |f| %>
+            <%= f.text_field :name_cont,placeholder: "search product by name" %>
+            <%= f.submit "Search" %>
           <% end %>
         </div>
       </form>
