@@ -17,9 +17,11 @@
       </ul>
       <form class="navbar-form navbar-left">
         <div class="form-group">
-          <%= search_form_for @search do |f| %>
-            <%= f.text_field :name_cont,placeholder: "search product by name" %>
-            <%= f.submit "Search" %>
+          <% if (!@search.blank?) %>
+            <%= search_form_for @search do |f| %>
+              <%= f.text_field :name_cont, placeholder: "search product by name" %>
+              <%= f.submit "Search" %>
+            <% end %>
           <% end %>
         </div>
       </form>
