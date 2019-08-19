@@ -1,5 +1,5 @@
 class ProductDecorator < ApplicationDecorator
-  #decorate :products
+  decorate :products
   delegate_all
 
   def cover

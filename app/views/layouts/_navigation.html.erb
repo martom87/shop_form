@@ -17,9 +17,13 @@
       </ul>
       <form class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <% if (!@search.blank?) %>
+            <%= search_form_for @search do |f| %>
+              <%= f.text_field :name_cont, placeholder: "search product by name" %>
+              <%= f.submit "Search" %>
+            <% end %>
+          <% end %>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><%= render 'layouts/logger' %></li>
@@ -28,3 +32,6 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+
