@@ -1,0 +1,21 @@
+language: ruby
+rvm:
+- 2.6.2
+before_install:
+- gem install bundler
+services:
+- postgresql
+before_script:
+- cp config/database.yml.ci config/database.yml
+- psql -c 'create database travis_ci_test;' -U postgres
+script:
+- bundle exec rails db:migrate RAILS_ENV=test
+- bundle exec rspec
+deploy:
+  provider: heroku
+  api_key:
+    secure: EDNr4QsCser+BJY2kAk2Pt5QG9bS3FaTek5YbM4srHHnbU+6v9/LE7Ox5gExDs9SrnWp7sQ7wJzBLh31Yuwqbyr0QdZEVLD0uUgsjYnq+jEw3fXNWIRVwrkLJQmYoRbu+zDeL2P5uicMmVJJGNYYJ4pPtkitZkD1twUqltxmyCZSqscqK4TkJy0eAacptIwWsd2Og+bcgN8IdWt7ZqBmxE9inUs40sD8HzgGgjx/hN9Ok8tK9/rU2UNla5C1qn8Rf/MBpFS/GYD+OIPTKbBc0Q1F3RK19pC8NTblfdEbmV4iYoFP7YKEOVC4cwOPmOUqgkU35Xy0JWz2gWlbBSlc6/AIVQ9Hn6d1F99+v0tWQmpfLQN0f4KTj9p3Cl3w2FqnLz3ckuBdTfuRSB5ihYxnE+g7LM3fFDXynMU+BVO/GEact6SVJM75qi2qC/8fK2ZmAChpbXPhfp3Wnl8xWv2066hsQfu7EMNAKLXeougRX+P0w2u6pXa68H+o0xsM59lGG2STFLbh/3F1+rykbQkde/CaholGdxL+W5+c1qWdQG901KNw7kSiYCG2PeK/AMUKkccFG/h/VRHsBudHPZCU0nwFbJNJtJufuxJUIYOe4EmsglHBqjbgO8SDb8mLV8NZbFXE1AlzOEkSLpGCI7+TWGo+2egaIY1MtupdW9BzWCY=
+  run: rake db:migrate
+  app: shop_form
+  on:
+    repo: martom87/shop_form
