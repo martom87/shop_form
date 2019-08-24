@@ -7,10 +7,10 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-
   .column {
     float: left;
     width: 25%;
+    border: 0px solid transparent;
   }
 
   /* Clear floats after the columns */
@@ -19,22 +19,18 @@
     display: table;
     clear: both;
   }
+
   /* Float four columns side by side */
 
-
-  /*!* Remove extra left and right margins, due to padding *!*/
-  /*.row {*/
-    /*width: 60%;*/
-    /*margin: 0 -5px;*/
-    /*margin-left: 20px;*/
-  /*}*/
-
+  .row {
+    margin-left: 11vw;
+    width: 48vw;
+  }
 
   /* Responsive columns */
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
-      /*display: block;*/
       margin-bottom: 20px;
 
     }
@@ -58,38 +54,33 @@
     border-radius: 20px;
   }
 
-  .sep {
-
-  }
 
 </style>
 
 
-  <div class="row">
-    <% @products.each do |product| %>
+<div class="row">
+  <% @products.each do |product| %>
     <div class="column">
       <div class="column">
         <div class="column">
           <div class="column">
-            <div class="sep">
-              <div class="card">
-                <div class="card-img-top"><%= image_tag(product.cover2, size: product.picture_size, :class => "img-circular") %></div>
-                <div class="card-body">
-                  <!--          Important This line show how to parametrize styles with enbeded ruby-->
-                  <h4 class="card-title" style="color:<%="blue"%>;font-size: <%=160%>%"> <%= link_to product.name, product_path(product.id) %></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                  <%= render 'form', order_item: @order_item, product: product %>
-                </div>
+            <div class="card">
+              <div class="card-img-top"><%= image_tag(product.cover2, size: product.picture_size, :class => "img-circular") %></div>
+              <div class="card-body">
+                <!--          Important This line show how to parametrize styles with enbeded ruby-->
+                <h4 class="card-title" style="color:<%="blue"%>;font-size: <%=160%>%"> <%= link_to product.name, product_path(product.id) %></h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <%= render 'form', order_item: @order_item, product: product %>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <% end %>
-  </div>
+  <% end %>
+</div>
 
 
 

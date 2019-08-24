@@ -7,7 +7,7 @@
 
   }
 
-  #column3 {
+  #column_cart {
     height: 1000px;
     width: 20%;
     padding: 60px;
@@ -42,11 +42,9 @@
   }
 
     .pagination{
-      margin-left: 600px;
-      margin-top: 30px;
+      margin-left: 580px;
+      margin-top: 20px;
       margin-bottom: -20px;
-
-
     }
 
 </style>
@@ -64,7 +62,7 @@
   </div>
 
 
-  <div id="column3">
+  <div id="column_cart">
     <div class="cart_row">
       <h2 class="title_card_items">Cart</h2>
       <%= render 'carts/shopping_cart' %>
@@ -75,7 +73,7 @@
 
 <script>
     $(document).ready(function() {
-     $("#column3").niceScroll({nativeparentscrolling: false,touchbehavior:false,cursorcolor:"#CCC",cursoropacitymax:0.8,cursorwidth:4,autohidemode:false});
+     $("#column_cart").niceScroll({nativeparentscrolling: false,touchbehavior:false,cursorcolor:"#CCC",cursoropacitymax:0.8,cursorwidth:4,autohidemode:false});
     });
 </script>
 
