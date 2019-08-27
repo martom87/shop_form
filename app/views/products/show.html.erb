@@ -1,1 +1,4 @@
 <h1><%="#{@product.name} and #{@product.id}" %></h1>
+<div class="card-img-top"><%= image_tag(@product.cover2, size: @product.picture_size, :class => "img-circular") %></div>
+
+<%= render 'form', order_item: @order_item, product: @product %>

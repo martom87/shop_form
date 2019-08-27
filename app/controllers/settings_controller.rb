@@ -4,17 +4,14 @@ class SettingsController < ApplicationController
 
 
   def show
-
   end
 
   def edit
-    @setting = Setting.find(params[:id])
   end
 
   def update
     if @setting.update(setting_params)
       flash[:notice] = "Setting was changed"
-      #render 'edit'
       redirect_to root_path
     else
       render 'edit'
