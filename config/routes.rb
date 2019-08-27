@@ -2,8 +2,8 @@
 
 Rails.application.routes.draw do
   devise_for :users
-  resources :products, only: [:index]
-  resource :cart, only: [:show]
+  resources :products
+  resource :cart, only: %i[show]
   resources :order_items, only: %i[create update destroy]
   resources :settings
   root to: 'products#index'
