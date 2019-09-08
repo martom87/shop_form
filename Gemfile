@@ -49,7 +49,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  gem 'webdrivers', '~> 4.0'
 end
 
 group :test do

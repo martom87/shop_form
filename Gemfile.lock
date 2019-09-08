@@ -55,8 +55,6 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    archive-zip (0.12.0)
-      io-like (~> 0.3.0)
     arel (9.0.0)
     ast (2.4.0)
     autoprefixer-rails (9.6.0)
@@ -85,9 +83,6 @@ GEM
       xpath (~> 3.2)
     childprocess (2.0.0)
       rake (< 13.0)
-    chromedriver-helper (2.1.1)
-      archive-zip (~> 0.10)
-      nokogiri (~> 1.8)
     coderay (1.1.2)
     coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
@@ -159,7 +154,6 @@ GEM
       ruby_parser (~> 3.5)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
-    io-like (0.3.0)
     jaro_winkler (1.5.3)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
@@ -379,6 +373,10 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
+    webdrivers (4.1.2)
+      nokogiri (~> 1.6)
+      rubyzip (~> 1.0)
+      selenium-webdriver (>= 3.0, < 4.0)
     websocket (1.2.8)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
@@ -396,7 +394,6 @@ DEPENDENCIES
   bootstrap-sass (~> 3.4.1)
   byebug
   capybara
-  chromedriver-helper
   coffee-rails
   devise
   devise-bootstrap-views
@@ -437,6 +434,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier
   web-console (>= 3.3.0)
+  webdrivers (~> 4.0)
 
 RUBY VERSION
    ruby 2.6.2p47
