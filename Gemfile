@@ -47,6 +47,9 @@ group :development, :test do
   gem 'faker', git: 'https://github.com/stympy/faker.git', branch: 'master'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 end
 
 group :test do
