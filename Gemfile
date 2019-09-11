@@ -20,7 +20,7 @@ gem 'haml-rails'
 gem 'html2haml'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
-gem 'pg'
+gem 'pg', group: :production
 gem 'pry'
 gem 'pry-rails'
 gem 'puma', '~> 3.11'
