@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'pry'
 gem 'pry-rails'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 5.6'
 gem 'rubocop', '~> 0.64.0', require: false
 gem 'sass-rails'
 gem 'sdoc', '~> 0.4.0', group: :doc
